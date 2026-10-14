@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-const API = import.meta.env.VITE_API_URL || "/api";
+const API = "https://ids-project-m5dw.onrender.com/api";
 
 const SEVERITY_COLOR = {
   low:      "#4ade80",
@@ -113,8 +113,8 @@ export default function ThreatMap() {
           scrollWheelZoom={true}
         >
           <TileLayer
-            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-            attribution='© <a href="https://carto.com/">CARTO</a>'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             maxZoom={19}
           />
           <RecenterMap attacks={attacks} />
