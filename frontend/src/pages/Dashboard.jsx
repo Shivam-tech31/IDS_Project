@@ -6,7 +6,7 @@ import {
 import StatCard from "../components/StatCard";
 import { SeverityBadge, TypeBadge } from "../components/AlertBadge";
 
-const API = import.meta.env.VITE_API_URL || "/api";
+const API = import.meta.env.VITE_API_URL || "https://ids-project-m5dw.onrender.com/api";
 const WS  = import.meta.env.VITE_WS_URL  || `${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws`;
 
 const PIE_COLORS = {
