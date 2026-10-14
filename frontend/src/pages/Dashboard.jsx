@@ -6,8 +6,8 @@ import {
 import StatCard from "../components/StatCard";
 import { SeverityBadge, TypeBadge } from "../components/AlertBadge";
 
-const API = import.meta.env.VITE_API_URL || "https://ids-project-m5dw.onrender.com/api";
-const WS  = import.meta.env.VITE_WS_URL  || `${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/ws`;
+const API = "https://ids-project-m5dw.onrender.com/api";
+const WS  = "wss://ids-project-m5dw.onrender.com/ws";
 
 const PIE_COLORS = {
   normal: "#4ade80", DoS: "#f87171",
@@ -249,4 +249,3 @@ export default function Dashboard() {
     </div>
   );
 }
- 
